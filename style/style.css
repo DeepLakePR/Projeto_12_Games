@@ -1,0 +1,240 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: rgb(225, 225, 225);
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Header */
+header{
+    padding: 15px 0;
+}
+
+header .logo{
+    float: left;
+}
+
+header .logo img{
+    max-width: 100%;
+}
+
+header nav{
+    margin-top: 15px;
+    float: right;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: 400;
+}
+
+nav .nav-cta a{
+    padding: 10px 25px;
+    background: #30851d;
+    font-size: 19px;
+    color: white;
+}
+
+/* Game */
+section.game{
+    background: white;
+    margin: 15px 0;
+    padding: 30px 0;
+}
+
+section.game .game-title, .game-image{
+    float: left;
+    width: 50%;
+    color: #11223f;
+}
+
+.game-title{
+    padding: 0 20px;
+}
+
+.game-title h2, .game-title p{
+    margin: 20px 0;
+}
+
+.game-title h2{
+    font-size: 40px;
+}
+
+.game-title p{
+    font-size: 20px;
+}
+
+.game-image img{
+    max-width: 100%;
+}
+
+/* Feedbacks */
+section.feedbacks{
+    padding: 30px 0;
+}
+
+section.feedbacks .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feedbacks-single{
+    background-color: white;
+    background-image: url('../images/quote.png');
+    background-size: 48px 40px;
+    background-position: calc(100% - 10px) 10px;
+    background-repeat: no-repeat;
+    padding: 45px;
+    margin-bottom: 10px;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.feedbacks-single p{
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+}
+
+.feedbacks-single span{
+    font-weight: bold;
+    color: green;
+    font-size: 15px;
+}
+
+/* About */
+section.about{
+    padding: 20px 0;
+}
+
+.about-title h2{
+    color: black;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-bottom: 3px solid #2bb222;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.about-single{
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.about-single_title{
+    display: flex;
+}
+
+.about-single_title i{
+    background-color: #2bb222;
+    width: 20%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 10px;
+}
+
+.about-single_title h3{
+    color: black;
+    background: #f1f6f1;
+    width: 80%;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+.about-single_content{
+    background-color: white;
+    padding: 0 30px;
+    min-height: 120px;
+    color: black;
+}
+
+/* Footer */
+footer{
+    background-color: #effeee;
+    text-align: center;
+    color: black;
+    padding: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit
+}
+
+footer a i{
+    font-size: 22px;
+    margin: 0 2px;
+}
+
+footer p{
+    margin-top: 15px;
+}
+
+/************************/
+/* Responsive */
+@media screen and (max-width: 1073px){
+    
+    /* About */
+    .about-single{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    /* Game */
+    section.game .game-title, .game-image{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Feedbacks */
+    .feedbacks-single{
+        width: 100%;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 643px){
+
+    /* Header */
+    header nav{
+        text-align: center;
+    }
+
+    nav .nav-cta{
+        margin-top: 20px;
+    }
+    
+}
